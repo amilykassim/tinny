@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Tinny</string>
+
+    <!-- String names -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="post">post</string>
+    <string name="username">username</string>
+    <string name="story">story</string>
+    <string name="photo">photo</string>
+    <string name="selected_image">selected image</string>
+    <string name="it_is_a_post">it is a post</string>
+    <string name="it_is_a_comment">cmnt</string>
+    <string name="its_true">true</string>
+    <string name="its_false">false</string>
+    <string name="it_is_a_story">it_is_a_story</string>
+    <string name="feedback">feedback</string>
+    <string name="view_personal_posts">view personal posts</string>
+    <string name="view_post">view post</string>
+    <string name="view_all_messages">view all messges</string>
+    <string name="my_user_id">user id</string>
+    <string name="update_info">To get the most of Tinny, please update to the newest
+        version of Tinny on google play store</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Firebase database fields -->
+    <string name="dbname_users">u</string>
+    <string name="dbname_user_account_settings">ua</string>
+    <string name="dbname_new_messages_notifications">mnt</string>
+    <string name="dbname_comment_notifications">cnt</string>
+    <string name="dbname_user_posts">up</string>
+    <string name="dbname_post">p</string>
+    <string name="dbname_user_stories">ust</string>
+    <string name="dbname_messages">ms</string>
+    <string name="dbname_real_messages">sms</string>
+    <string name="dbname_sender_messages_receiver">smr</string>
+    <string name="dbname_reports">rps</string>
+    <string name="dbname_configuration_time">cftm</string>
+
+
+    <!-- message database fields -->
+    <string name="field_sender_id">sid</string>
+    <string name="field_receiver_id">rid</string>
+    <string name="field_seen">sn</string>
+    <string name="field_message">m</string>
+    <string name="field_from">f</string>
+    <string name="field_to">t</string>
+    <string name="field_message_id">mid</string>
+
+
+    <string name="field_type">tp</string>
+    <string name="field_time">tm</string>
+    <string name="field_problem">pr</string>
+
+    <string name="field_image_path">url</string>
+    <string name="field_image_thumbnail">th</string>
+    <string name="field_video_path">vUrl</string>
+    <string name="field_video_thumbnail">vTh</string>
+    <string name="field_video_views">vs</string>
+    <string name="field_caption">c</string>
+    <string name="field_username">unm</string>
+    <string name="field_displayName">dnm</string>
+    <string name="field_email">e</string>
+    <string name="field_password">psw</string>
+    <string name="field_phone_number">pnm</string>
+    <string name="field_user_id">uid</string>
+    <string name="field_description">d</string>
+    <string name="field_post_views">v</string>
+    <string name="field_courses_taken">ct</string>
+    <string name="field_title">t</string> <!-- thi is is the title or a topic of the post-->
+    <string name="field_photo_id">pid</string>
+    <string name="field_profile_photo">pp</string>
+    <string name="field_online">o</string>
+    <string name="field_time_created">tm</string>
+    <string name="field_comments">c</string>
+    <string name="field_views">vs</string>
+    <string name="field_device_token">dtkn</string>
+
+    <!-- navigation drawer header Names -->
+    <string name="log_out_header">log_out_header</string>
+    <string name="edit_profile_header">edit_profile_header</string>
+    <string name="report_header">report_header</string>
+    <string name="view_shop_header">view_shop_header</string>
+
+    <!-- Fragment names -->
+    <string name="log_out_fragment">Log Out</string>
+    <string name="home_fragment">Home</string>
+    <string name="view_post_fragment">view post fragment</string>
+    <string name="view_all_personal_posts_fragment">view all personal posts fragment</string>
+    <string name="report_fragment">report fragment</string>
+    <string name="view_comments_fragment">Comments</string>
+    <string name="stories_fragment">stories fragment</string>
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="search_fragment">search fragment</string>
+    <string name="view_other_profile_fragment">view other profile</string>
+
+    <!-- Activity names -->
+    <string name="home_activity">home activity</string>
+    <string name="post_activity">post activity</string>
+
+
+    <!-- Swipe keywords preferences -->
+    <string name="swipe_photo_user_id">swipe_photo_user_id</string>
+    <string name="swipe_photo_id">swipe_photo_id</string>
+    <string name="swipe_last_count">swipe_last_count</string>
+    <string name="swipe_intent">swipe_intent</string>
+
+
+    <!-- Shared preferences -->
+    <string name="shared_preferences">prefs</string>
+    <string name="ads_shared_preferences">ads prefs</string>
+    <string name="ads_counting_key">ads key</string>
+    <string name="timestamp_key">time stamp key</string>
+
+    <!-- Shared Preferences Header names -->
+    <string name="PREFS_DOWNLOADING_SYSTEMS">PREFS_DOWNLOADING_SYSTEMS</string>
+
+    <!-- Intent Extras -->
+    <string name="selected_video">selected_video</string>
+
+</resources>

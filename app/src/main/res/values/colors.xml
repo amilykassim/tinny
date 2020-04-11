@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#009de4</color>
+    <color name="greyColor">#bfbfbf</color>
+    <color name="discoverColor">#eae8e8</color>
+    <color name="darkGreyColor">#999999</color>
+    <color name="greyLightColor">#eaeaea</color>
+    <color name="irishColor">#00a2ff</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="whitishColor">#e4e4e4</color>
+    <color name="blackColor">#000000</color>
+    <color name="lightBlackColor">#616161</color>
+    <color name="blueColor">#4d94ff</color>
+    <color name="redColor">#cc0003</color>
+    <color name="redDarkColor">#8f0002</color>
+    <color name="rosish">#f16f7d</color>
+    <color name="whitish">#f7f7f7</color>
+    <color name="really_whitish">#fcfcfc</color> <!-- fafafa -->
+    <color name="pinkish">#df546e</color>
+    <color name="lightBlue">#009de4</color>
+    <color name="messageColor">#2372e9</color>
+    <color name="paymentColor">#010a54</color>
+    <color name="lightGreen">#b40072</color>
+    <color name="customTabLayoutColor">#e90000</color>
+</resources>

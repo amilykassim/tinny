@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".utils.ViewPostFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar_post_layout"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_view_post"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutParent"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:background="@color/whiteColor"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/post_views"
+            android:background="@drawable/white_square_button_background"
+            android:layout_weight="50"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp" />
+
+        <Button
+            android:id="@+id/post_comments"
+            android:textColor="@color/whiteColor"
+            android:background="@drawable/blue_square_button_background"
+            android:layout_weight="50"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

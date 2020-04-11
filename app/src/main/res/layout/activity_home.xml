@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/whiteColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relLayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- first home toolbar -->
+                <RelativeLayout
+                    android:id="@+id/relLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/toolbar_home"/>
+                </RelativeLayout>
+
+                <!-- Second home toolbar -->
+                <RelativeLayout
+                    android:id="@+id/relLayout2"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/toolbar_second_home_layout"/>
+                </RelativeLayout>
+
+
+                <!-- main body -->
+                <RelativeLayout
+                    android:layout_below="@id/relLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include layout="@layout/layout_center_view_pager" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:fitsSystemWindows="true"
+                app:headerLayout="@layout/layout_navigation_drawer_header"
+                app:itemTextColor="@color/blackColor"
+                app:itemIconTint="@color/blackColor"
+                app:menu="@menu/navigation_drawer_menu"
+                android:layout_gravity="right"
+                android:background="@color/whiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </android.support.design.widget.NavigationView>
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:orientation="vertical"
+        android:background="@color/whiteColor"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,68 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:background="@drawable/white_grey_border_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <android.support.v7.widget.Toolbar
+            android:background="@color/messageColor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/backArrow"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_back_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/backArrow"
+                    android:layout_toEndOf="@id/backArrow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:id="@+id/username_textView_chat_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@id/backArrow"
+                    android:layout_toEndOf="@id/backArrow"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12sp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/last_seen_chat_activity"
+                    android:layout_below="@id/username_textView_chat_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/custom_image_bar_layout"
+                    app:civ_border_color="@color/whiteColor"
+                    app:civ_border_width="0.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+</merge>

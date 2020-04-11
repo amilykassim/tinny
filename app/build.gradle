@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.amily.tycoon"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 25
+        versionName "2.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:27.1.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:support-v4:27.1.1'
+
+    /* Start of Firebase dependencies */
+
+    // Firebase core (Analytics)
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+
+    // Firebase database
+    implementation 'com.google.firebase:firebase-database:16.0.6'
+
+    // Firebase storage
+    implementation 'com.google.firebase:firebase-storage:16.0.5'
+
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:4.2.1'
+
+    // this dependencies avoids the crashes of the app when you use the firebase ui
+    implementation "android.arch.core:runtime:1.1.1"
+    implementation "android.arch.core:common:1.1.1"
+
+    // Firebase authentication
+    implementation 'com.google.firebase:firebase-auth:16.1.0' // i changed this from 16.0.5
+
+    // Firebase cloudmessaging
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    // Firebase config
+    implementation 'com.google.firebase:firebase-config:16.1.3' // i changed this from 16.1.2
+
+    /* End of firebase dependencies */
+
+    // Compressor is used to compress the images to create a thumbnail of them. so they become smaller
+    implementation 'id.zelory:compressor:2.1.0'
+
+    // Circle ImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+//    // image crop library
+//    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+
+    // RecyclerView
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    //cardView
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    //Glide library
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    // emoji library
+    implementation 'com.rockerhieu.emojicon:library:1.3.3'
+
+    // stylable toast library
+    implementation 'com.muddzdev:styleabletoast:2.0.1'
+
+
+
+//    // google admob
+//    implementation 'com.google.android.gms:play-services-ads:17.1.2'
+
+    // multi dex // if you remove this also remove multi dex enabled == true in the default config above in this class, // and change the TYCOON also to extend the Application class instead of MultidexApplication
+    implementation 'com.android.support:multidex:1.0.3'
+
+    // swipeable cards
+    implementation 'com.lorentzos.swipecards:library:1.0.9'
+
+    // stories library
+    implementation 'com.github.shts:StoriesProgressView:1.0.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

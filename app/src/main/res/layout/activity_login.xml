@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:background="@drawable/new_login_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Logo or brand name-->
+
+            <RelativeLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/login_header"
+                    android:text="Tinny"
+                    android:textSize="60sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/whiteColor"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/tinny_logo"
+                    android:layout_toRightOf="@id/login_header"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <!--<TextView-->
+                <!--android:text="Auca"-->
+                <!--android:textSize="30sp"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginEnd="30dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/whiteColor"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+            <ProgressBar
+                android:layout_marginTop="10dp"
+                android:id="@+id/progressbar"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+            <EditText
+                android:id="@+id/email_login_activity"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="email"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/whiteColor"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_person_white"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="#f9d7db"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/password_login_activity"
+                android:textColor="@color/whiteColor"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="password"
+                android:textColorHint="@color/whiteColor"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/ic_lock_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/whitish"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:background="@drawable/background_login_btn"
+                android:text="log in"
+                android:textSize="18sp"
+                android:textColor="@color/rosish"
+                android:textAllCaps="false"
+                android:padding="16dp"
+                android:clickable="true"
+                android:layout_marginTop="24dp"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/sign_up_btn"
+                android:background="@drawable/background_sign_up_btn"
+                android:text="sign up"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/whiteColor"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/forgotPassword_tv"
+                android:text="Forgot your password ?"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:textColor="@color/whiteColor"
+                android:padding="16dp"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

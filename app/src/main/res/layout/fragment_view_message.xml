@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    tools:context=".utils.ViewMessageFragment">
+
+    <include layout="@layout/toolbar_message_layout"/>
+
+    <LinearLayout
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_weight="100"
+            android:id="@+id/majorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/messageRecyclerView_ChatActivity"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/relLayout_message"
+                android:background="@drawable/white_rounded_button_background"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/chat_add_emoji"
+                    android:src="@drawable/ic_smile_message"
+                    android:layout_marginTop="14dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ic_keyboard"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_keyboard"
+                    android:layout_marginTop="14dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+
+                <com.rockerhieu.emojicon.EmojiconEditText
+                    android:padding="2dp"
+                    emojicon:emojiconSize="26sp"
+                    android:background="@null"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_centerVertical="true"
+                    android:hint="Type a message..."
+                    android:textSize="17sp"
+                    android:id="@+id/chat_message_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/chat_send"
+                    android:src="@drawable/ic_message"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/loadingLayout"
+                android:orientation="vertical"
+                android:background="@color/whiteColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/emojicons_frame_layout"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_login_gradient"
+    tools:context=".accountSettings.SignOutFragment">
+
+    <TextView
+        android:text="Do you want to sign out?"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/whiteColor"
+        android:layout_above="@id/linearLayout1"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:weightSum="100"
+        android:paddingBottom="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/sign_out_btn"
+            android:layout_weight="50"
+            android:text="Sign Out"
+            android:textColor="@color/blackColor"
+            android:background="@drawable/blue_rounded_button_background"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_weight="50"
+            android:text="Cancel"
+            android:textColor="@color/blackColor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blue_rounded_button_background"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

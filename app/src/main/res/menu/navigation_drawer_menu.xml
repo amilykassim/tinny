@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/refresh_header"
+        android:title="Refresh new posts"
+        android:icon="@drawable/ic_dashboard"/>
+    <item
+        android:id="@+id/send_money_easy_way_header"
+        android:title="Send Money Easy way"
+        android:icon="@drawable/ic_money"/>
+    <item
+        android:id="@+id/my_messages"
+        android:title="Messages"
+        android:icon="@drawable/ic_message"/>
+    <item
+        android:id="@+id/edit_profile_header"
+        android:title="My Profile"
+        android:icon="@drawable/ic_profile"/>
+    <item
+        android:id="@+id/my_post_header"
+        android:title="My posts"
+        android:icon="@drawable/ic_description"/>
+    <item
+        android:id="@+id/search_header"
+        android:title="Search"
+        android:icon="@drawable/ic_discover_bold"/>
+    <item
+        android:id="@+id/share_with_header"
+        android:title="Share with friends"
+        android:icon="@drawable/ic_share_with"/>
+    <item
+        android:id="@+id/feedback_header"
+        android:title="Feedback"
+        android:icon="@drawable/ic_description"/>
+    <item
+        android:id="@+id/report_a_problem_header"
+        android:title="Report a problem"
+        android:icon="@drawable/ic_report_a_problem"/>
+
+    <item
+        android:id="@+id/logout_header"
+        android:title="Log out"
+        android:icon="@drawable/ic_log_out"/>
+
+</menu>

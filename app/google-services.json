@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "545098414724",
+    "firebase_url": "https://tycoon-5316e.firebaseio.com",
+    "project_id": "tycoon-5316e",
+    "storage_bucket": "tycoon-5316e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545098414724:android:27cc58d1a0a77e83",
+        "android_client_info": {
+          "package_name": "com.amily.tycoon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545098414724-9u59chn7m61h4scre5ko6s96jgbi61fd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amily.tycoon",
+            "certificate_hash": "bb6b8a05d904fe709ceacac641e091b6c9209373"
+          }
+        },
+        {
+          "client_id": "545098414724-orgsfce1ef8u6g45qn08r2uqm500u2sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA85Xm0ydkmhS_Go8O2hfrU7qoCA793aI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545098414724-orgsfce1ef8u6g45qn08r2uqm500u2sa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

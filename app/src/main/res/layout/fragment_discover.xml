@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whiteColor"
+    tools:context=".home.DiscoverFragment">
+
+    <RelativeLayout
+        android:layout_below="@id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="100"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- activity view -->
+            <FrameLayout
+                android:layout_weight="98"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <com.lorentzos.flingswipe.SwipeFlingAdapterView
+                    android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:rotation_degrees="15.5" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/load_more_items_btn"
+            android:text="load more items"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/white_rounded_button_background"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_story_fragment_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add"
+        android:tint="@color/whiteColor"
+        app:backgroundTint="@color/lightBlue"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        app:pressedTranslationZ="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
